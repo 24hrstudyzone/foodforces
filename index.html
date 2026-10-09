@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emerging Forces in Food</title>
+<meta name="description" content="A Jeffersonian style quarterly gathering for a community of young food scientists, chefs, and emerging business leaders.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{--cream:#EFE9D9;--cream-2:#E4DCC4;--green:#1F8A4C;--pink:#F06CA8;--yellow:#F5C518;--ink:#0F0F0F;--ink-2:#2A2A2A}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--ink);font-family:'Space Grotesk',sans-serif;line-height:1.55}
+section{max-width:960px;margin:0 auto;padding:88px 24px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-bottom:28px}
+h1{font-family:'Archivo Black',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(48px,9vw,112px);line-height:.95;letter-spacing:-.02em}
+h1 em{color:var(--pink)}
+.tag{font-size:clamp(18px,2.4vw,24px);max-width:620px;margin-top:32px;color:var(--ink-2)}
+h2{font-family:'Archivo Black',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(30px,4.5vw,48px);margin-bottom:36px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:var(--cream-2);padding:28px;border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.card .big{font-family:'Archivo Black',sans-serif;font-size:28px;line-height:1.1;margin-bottom:12px}
+.venn{width:100%;max-width:640px;display:block;margin:0 auto;overflow:visible}
+.glass{mix-blend-mode:multiply;transition:transform 1.4s cubic-bezier(.2,.8,.2,1),opacity 1.1s ease}
+.venn:not(.in) #gS{transform:translate(-120px,-60px);opacity:0}
+.venn:not(.in) #gC{transform:translate(120px,-60px);opacity:0}
+.venn:not(.in) #gB{transform:translate(0,120px);opacity:0}
+.venn.in .floatS{animation:fS 7s ease-in-out 1.6s infinite}
+.venn.in .floatC{animation:fC 8s ease-in-out 1.6s infinite}
+.venn.in .floatB{animation:fB 9s ease-in-out 1.6s infinite}
+@keyframes fS{50%{transform:translate(-4px,-5px)}}
+@keyframes fC{50%{transform:translate(5px,-4px)}}
+@keyframes fB{50%{transform:translate(0,5px)}}
+@media (prefers-reduced-motion:reduce){.glass{transition:none}.venn .floatS,.venn .floatC,.venn .floatB{animation:none!important}}
+.shine{mix-blend-mode:screen;pointer-events:none}
+.lbl{font-family:'Archivo Black',sans-serif;font-size:22px;fill:var(--ink);text-anchor:middle;dominant-baseline:central;text-transform:uppercase;pointer-events:none;transition:opacity .6s 1.2s}
+.venn:not(.in) .lbl{opacity:0}
+.ctr{font-family:'Archivo Black',sans-serif;font-size:17px;fill:var(--ink);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.zone{fill:#fff;fill-opacity:0;cursor:pointer;transition:fill-opacity .25s}
+.zone:hover{fill-opacity:.22}
+.zone.on{fill-opacity:.38}
+.zone:focus{outline:none}
+.zone:focus-visible{fill-opacity:.3;stroke:var(--ink);stroke-width:2}
+.caption{min-height:3.4em;max-width:560px;margin:28px auto 0;text-align:center;font-size:clamp(17px,2.2vw,21px);transition:opacity .3s}
+.caption b{font-family:'Archivo Black',sans-serif;font-weight:400}
+.hint{color:var(--ink-2);opacity:.7}
+.join{text-align:center;padding-bottom:120px}
+.join h2{margin:0}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="eyebrow">A quarterly gathering</div>
+  <h1>Emerging Forces<br><em>in Food</em></h1>
+  <p class="tag">A Jeffersonian style quarterly gathering for a community of young food scientists, chefs, and emerging business leaders.</p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="how">
+    <div class="card"><div class="big">2 mini presentations</div><p>Two 10 minute presentations from people who have done the work.</p></div>
+    <div class="card"><div class="big">1 themed conversation</div><p>A guided, open conversation on one topic, where everyone at the table speaks.</p></div>
+    <div class="card"><div class="big">Good food</div><p>All of it around delicious food and drinks.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Why these three</h2>
+  <svg class="venn" id="venn" viewBox="0 0 600 500" role="img" aria-label="Three tinted glass circles for science, chefs and business overlap. Their center is a better future of food. Select an overlap to read what happens when one group is missing.">
+    <defs>
+      <radialGradient id="tS" cx="38%" cy="32%" r="75%">
+        <stop offset="0" stop-color="#9FE3B9"/><stop offset=".55" stop-color="#3FB06E"/><stop offset="1" stop-color="#1F8A4C"/>
+      </radialGradient>
+      <radialGradient id="tC" cx="38%" cy="32%" r="75%">
+        <stop offset="0" stop-color="#FFD0E6"/><stop offset=".55" stop-color="#F58BBC"/><stop offset="1" stop-color="#E0559A"/>
+      </radialGradient>
+      <radialGradient id="tB" cx="38%" cy="32%" r="75%">
+        <stop offset="0" stop-color="#FFF1B0"/><stop offset=".55" stop-color="#F8D24A"/><stop offset="1" stop-color="#E9B60C"/>
+      </radialGradient>
+      <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="cS"><circle cx="225" cy="200" r="150"/></clipPath>
+      <clipPath id="cC"><circle cx="375" cy="200" r="150"/></clipPath>
+      <clipPath id="cB"><circle cx="300" cy="330" r="150"/></clipPath>
+      <mask id="mNotS"><rect width="600" height="500" fill="#fff"/><circle cx="225" cy="200" r="150" fill="#000"/></mask>
+      <mask id="mNotC"><rect width="600" height="500" fill="#fff"/><circle cx="375" cy="200" r="150" fill="#000"/></mask>
+      <mask id="mNotB"><rect width="600" height="500" fill="#fff"/><circle cx="300" cy="330" r="150" fill="#000"/></mask>
+    </defs>
+
+    <g id="gS" class="glass"><g class="floatS">
+      <circle cx="225" cy="200" r="150" fill="url(#tS)" fill-opacity=".72"/>
+      <circle cx="225" cy="200" r="148" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/>
+      <circle cx="225" cy="200" r="150" fill="none" stroke="#136636" stroke-opacity=".55" stroke-width="1.5"/>
+    </g></g>
+    <g id="gC" class="glass"><g class="floatC">
+      <circle cx="375" cy="200" r="150" fill="url(#tC)" fill-opacity=".72"/>
+      <circle cx="375" cy="200" r="148" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/>
+      <circle cx="375" cy="200" r="150" fill="none" stroke="#B23B78" stroke-opacity=".55" stroke-width="1.5"/>
+    </g></g>
+    <g id="gB" class="glass"><g class="floatB">
+      <circle cx="300" cy="330" r="150" fill="url(#tB)" fill-opacity=".72"/>
+      <circle cx="300" cy="330" r="148" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/>
+      <circle cx="300" cy="330" r="150" fill="none" stroke="#A88206" stroke-opacity=".55" stroke-width="1.5"/>
+    </g></g>
+
+    <g class="shine">
+      <ellipse cx="180" cy="110" rx="70" ry="32" transform="rotate(-28 180 110)" fill="url(#hl)" opacity=".75"/>
+      <ellipse cx="330" cy="110" rx="70" ry="32" transform="rotate(-28 330 110)" fill="url(#hl)" opacity=".75"/>
+      <ellipse cx="255" cy="240" rx="70" ry="32" transform="rotate(-28 255 240)" fill="url(#hl)" opacity=".6"/>
+    </g>
+
+    <!-- clickable overlap zones -->
+    <g clip-path="url(#cS)"><circle class="zone" data-k="sb" tabindex="0" role="button" aria-label="Science and business without chefs" cx="375" cy="200" r="150" mask="url(#mNotB)"/></g>
+    <g clip-path="url(#cS)"><circle class="zone" data-k="sc" tabindex="0" role="button" aria-label="Science and chefs without business" cx="300" cy="330" r="150" mask="url(#mNotC)"/></g>
+    <g clip-path="url(#cC)"><circle class="zone" data-k="cb" tabindex="0" role="button" aria-label="Chefs and business without science" cx="300" cy="330" r="150" mask="url(#mNotS)"/></g>
+    <g clip-path="url(#cS)"><g clip-path="url(#cC)"><circle class="zone" data-k="all" tabindex="0" role="button" aria-label="All three together" cx="300" cy="330" r="150"/></g></g>
+
+    <text x="150" y="150" class="lbl">Science</text>
+    <text x="450" y="150" class="lbl">Chefs</text>
+    <text x="300" y="425" class="lbl">Business</text>
+    <text x="300" y="232" class="ctr">Better</text>
+    <text x="300" y="254" class="ctr">future of food</text>
+  </svg>
+  <p class="caption" id="cap" aria-live="polite"><span class="hint">Tap where the circles overlap.</span></p>
+</section>
+
+<section class="join"><h2>Join the table</h2></section>
+
+<script>
+var lines={
+  sb:'<b>When science and business meet without chefs:</b> soulless protein bar substitutes, with no joy of flavor.',
+  cb:'<b>When chefs and business meet without science:</b> trendy Instagram food that cannot scale.',
+  sc:'<b>When science and chefs meet without business:</b> research breakthroughs that never reach a shelf.',
+  all:'<b>When all three meet:</b> a better future of food.'
+};
+var venn=document.getElementById('venn'),cap=document.getElementById('cap'),zones=document.querySelectorAll('.zone');
+function pick(z){
+  zones.forEach(function(o){o.classList.toggle('on',o===z)});
+  cap.style.opacity=0;
+  setTimeout(function(){cap.innerHTML=lines[z.dataset.k];cap.style.opacity=1},150);
+}
+zones.forEach(function(z){
+  z.addEventListener('click',function(){pick(z)});
+  z.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(z)}});
+});
+if('IntersectionObserver' in window){
+  new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){venn.classList.add('in');o.disconnect()}})},{threshold:.35}).observe(venn);
+}else{venn.classList.add('in')}
+</script>
+</body>
+</html>
